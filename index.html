@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for character set -->
+    <meta charset="UTF-8">
+
+    <!-- Metadata for viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metadata for description of the web page -->
+    <meta name="description" content="Explore and manage your favorite bookmarks with our Bookmark Manager tool.">
+
+    <!-- Metadata for keywords related to the web page content -->
+    <meta name="keywords" content="bookmarks, bookmark manager, web tools, website organization, save links, git Project">
+
+    <!-- Metadata for authorship -->
+    <meta name="author" content="Ganeswar Sahoo">
+
+    <!-- Title of the document -->
+    <title>Bookmark Manager</title>
+
+    <!-- External CSS libraries for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin>
+
+    <!-- Internal CSS for custom styling -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="container-sm box mt-5">
+        <!-- Header section -->
+        <header>
+            <h1>Bookmark Manager</h1>
+        </header>
+
+        <!-- Form for adding bookmarks -->
+        <form class="mt-4" id="input-form">
+            <div class="row">
+                <!-- Input field for bookmark name -->
+                <div class="col-sm-12 col-md-6 col-lg-5 mb-3">
+                    <input type="text" id="Url-name" class="form-control" placeholder="Enter Name "
+                        aria-label="Url name" required maxlength="21">
+                </div>
+
+                <!-- Input field for bookmark URL -->
+                <div class="col-sm-12 col-md-6 col-lg-5 mb-3">
+                    <input type="url" id="Url-link" class="form-control" placeholder="Enter Url" aria-label="Url link"
+                        required>
+                </div>
+
+                <!-- Button to add bookmark -->
+                <div class="col-sm-12 col-md-6 col-lg-2 mb-3 button">
+                    <button type="submit" class="btn btn-primary mb-3" id="submit">Add</button>
+                </div>
+            </div>
+            <!-- Message container for alerts -->
+            <div class="message" id="message"></div>
+        </form>
+
+        <!-- Container for displaying bookmark list -->
+        <div class="container-sm">
+            <div class="list-group">
+                <div class="row mt-4 " id="list-row">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript library for Bootstrap functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Internal JavaScript for custom functionality -->
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

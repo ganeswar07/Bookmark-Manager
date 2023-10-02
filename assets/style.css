@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.box {
+  background-color: rgb(131, 200, 204);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: block;
+}
+input {
+  width: 60%;
+  height: 3rem;
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+}
+input:focus {
+  border-color: #3498db;
+}
+::-webkit-input-placeholder {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#submit {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+#submit:hover {
+  transform: scale(1.05);
+}
+
+#Url-name,
+#Url-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.list a {
+  display: inline;
+}
+.list-group-item:first-child {
+  border-radius: 5px;
+}
+
+.list-group-item {
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1.2rem;
+  height: 3rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.list-group-item:hover {
+  background-color: rgb(95, 92, 92);
+  color: #fcfcfc;
+}
+.list-group-item-action {
+  width: 80%;
+}
+.row span {
+  margin-left: 10px;
+}
+.row span i {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.alert {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.alert-success {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.alert-danger {
+  background-color: #f44336;
+  color: #fff;
+}
+
+/* Optional: Add an animation for messages */
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.alert {
+  animation: fadeInOut 3s forwards;
+}
+
+@media (max-width: 768px) {
+  input {
+    width: 100%;
+  }
+}
