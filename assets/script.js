@@ -45,7 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Validate the URL format
     if (!isValidURL(link)) {
-      showMessage("Please enter a valid URL.", "danger");
+      showMessage(
+        "Please enter a valid URL in the format 'http://www.example.com'.",
+        "danger"
+      );
       clearInputs(urlNameInput, linkInput);
       return;
     }
@@ -133,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Clear the message after 3 seconds
     setTimeout(() => {
       messageContainer.innerHTML = "";
-    }, 3000);
+    }, 4000);
   }
 
   function clearInputs(...inputs) {
